@@ -6,13 +6,13 @@
 ***
 # Uso
 - *`./AutoNmap -h      ( Ver panel de ayuda )`*
-- *`./AutoNmap <IP> -t ( Escaneo TCP rapido )`*
-- *`./AutoNmap <IP> -T ( Escaneo TCP estandar )`*
-- *`./AutoNmap <IP> -u ( Escaneo UDP )`*
-- *`./AutoNmap <IP> -n ( Escaneo comun (solo nmap) )`*
+- *`./AutoNmap -t <IP>( Escaneo TCP rapido )`*
+- *`./AutoNmap -T <IP>( Escaneo TCP estandar )`*
+- *`./AutoNmap -u <IP>( Escaneo UDP )`*
+- *`./AutoNmap -n <IP>( Escaneo comun (solo nmap) )`*
 
 **Nota:** *La herramienta genera dos archivos con los resultados de los escaneos.*
 ***
 # Instalación
-`https://github.com/t0ji00/AutoNmap.git`
+`git clone https://github.com/t0ji00/AutoNmap.git`
 ***
