@@ -37,10 +37,10 @@ $EndColor"
 
   echo -e "$ColorTurquesa Uso:$EndColor\n"
   echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -h$EndColor      $ColorRed[!] Ver panel de ayuda$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray <IP> -t$EndColor$ColorRed [!] Escaneo TCP rapido$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray <IP> -T$EndColor$ColorRed [!] Escaneo TCP estandar$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray <IP> -u$EndColor$ColorRed [!] Escaneo UDP$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray <IP> -n$EndColor$ColorRed [!] Escaneo comun (solo nmap)$EndColor\n"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -t <IP>$EndColor$ColorRed [!] Escaneo TCP rapido$EndColor"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -T <IP>$EndColor$ColorRed [!] Escaneo TCP estandar$EndColor"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -u <IP>$EndColor$ColorRed [!] Escaneo UDP$EndColor"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -u <IP>$EndColor$ColorRed [!] Escaneo comun (solo nmap)$EndColor\n"
 }
 
 # AutoNmap_tcp_fast
