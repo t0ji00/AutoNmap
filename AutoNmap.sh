@@ -57,7 +57,7 @@ function AutoNmap_tcp_fast(){
     echo -e "\n$ColorPurpure [!]$EndColor$ColorGray Analizando servicios...$EndColor"
     disC_Services="$(nmap -sCV -T4 -p$disC_Ports -Pn $ip_address -oN Services)"
     echo -e "\n$ColorYellow [+]$EndColor$ColorGray Los servicios han sido descubiertos...$EndColor"
-    echo -e "\n$ColorYellow [!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports, por si hay algun error$EndColor"
+    echo -e "\n$ColorYellow [!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports', por si se encuentra algun error$EndColor"
 
     sudo chown $(whoami):$(whoami) Ports
     sudo chown $(whoami):$(whoami) Services
@@ -80,7 +80,7 @@ function AutoNmap_tcp_stand(){
     echo -e "\n$ColorPurpure[!]$EndColor$ColorGray Analizando servicios...$EndColor"
     disC_Services="$(nmap -sCV -T4 -p$disC_Ports -Pn $ip_address -oN Services)"
     echo -e "\n$ColorYellow[+]$EndColor$ColorGray Los servicios han sido descubiertos...$EndColor"
-    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports, por si hay algun error'$EndColor"
+    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports', por si se encuentra algun error$EndColor"
 
     sudo chown $(whoami):$(whoami) Ports
     sudo chown $(whoami):$(whoami) Services
@@ -103,7 +103,7 @@ function AutoNmap_upd(){
     echo -e "\n$ColorPurpure[!]$EndColor$ColorGray Analizando servicios...$EndColor"
     disC_Services="$(nmap -sCV -T4 -p$disC_Ports -Pn $ip_address -oN Services)"
     echo -e "\n$ColorYellow[+]$EndColor$ColorGray Los servicios han sido descubiertos...$EndColor"
-    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports, por si hay algun error$EndColor"
+    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports', por si se encuentra algun error$EndColor"
 
     sudo chown $(whoami):$(whoami) Ports
     sudo chown $(whoami):$(whoami) Services
@@ -125,7 +125,7 @@ function AutoNmap_comun(){
     echo -e "\n$ColorPurpure[!]$EndColor$ColorGray Analizando servicios...$EndColor"
     disC_Services="$(nmap -sCV -T4 -p$disC_Ports -Pn $ip_address -oN Services)"
     echo -e "\n$ColorYellow[+]$EndColor$ColorGray Los servicios han sido descubiertos...$EndColor"
-    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports, por si hay algun error$EndColor"
+    echo -e "\n$ColorYellow[!]$EndColor$ColorGray Revise el contenido de los archivos 'Services' y 'Ports', por si se encuentra algun error.$EndColor"
 
     sudo chown $(whoami):$(whoami) Ports
     sudo chown $(whoami):$(whoami) Services
