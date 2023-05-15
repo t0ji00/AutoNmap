@@ -2,7 +2,7 @@
 # AutoNmap.sh
 **Herramienta desde línea de comando, la cual sirve para utomatizar escaneos basicos de nmap al momento de realizar CTF.**
 ***
-![image](https://github.com/t0ji00/AutoNmap/assets/132774558/af2d1eb4-e3ad-4fe9-9fb0-30339bf64aaa)
+![image](https://github.com/t0ji00/AutoNmap/assets/132774558/580fd1a3-e2d5-4fd9-94cf-01fb99bd0390)
 ***
 # Uso
 - *`./AutoNmap -h      ( Ver panel de ayuda )`*
