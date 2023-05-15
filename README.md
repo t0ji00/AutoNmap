@@ -5,11 +5,11 @@
 ![image](https://github.com/t0ji00/AutoNmap/assets/132774558/580fd1a3-e2d5-4fd9-94cf-01fb99bd0390)
 ***
 # Uso
-- *`./AutoNmap -h      ( Ver panel de ayuda )`*
+- *`./AutoNmap -h     ( Ver panel de ayuda )`*
 - *`./AutoNmap -t <IP>( Escaneo TCP rapido )`*
-- *`./AutoNmap -T <IP>( Escaneo TCP estandar )`*
+- *`./AutoNmap -T <IP>( Escaneo TCP full )`*
 - *`./AutoNmap -u <IP>( Escaneo UDP )`*
-- *`./AutoNmap -n <IP>( Escaneo comun (solo nmap) )`*
+- *`./AutoNmap -n <IP>( Just nmap )`*
 
 **Nota:** *La herramienta genera dos archivos con los resultados de los escaneos.*
 ***
