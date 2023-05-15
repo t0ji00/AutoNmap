@@ -38,9 +38,9 @@ $EndColor"
   echo -e "$ColorTurquesa Uso:$EndColor\n"
   echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -h$EndColor      $ColorRed[!] Ver panel de ayuda$EndColor"
   echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -t <IP>$EndColor$ColorRed [!] Escaneo TCP rapido$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -T <IP>$EndColor$ColorRed [!] Escaneo TCP estandar$EndColor"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -T <IP>$EndColor$ColorRed [!] Escaneo TCP full$EndColor"
   echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -u <IP>$EndColor$ColorRed [!] Escaneo UDP$EndColor"
-  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -u <IP>$EndColor$ColorRed [!] Escaneo comun (solo nmap)$EndColor\n"
+  echo -e "$ColorGreen./AutoNmap$EndColor$ColorGray -u <IP>$EndColor$ColorRed [!] Just nmap$EndColor\n"
 }
 
 # AutoNmap_tcp_fast
@@ -73,7 +73,7 @@ function AutoNmap_tcp_stand(){
     echo -e "\n$ColorPurpure[!]$ColorPurpure$ColorGray Analizando puertos...$EndColor"
     echo $ipaddress
 
-    disC_Ports="$(sudo nmap -p- -T3 --min-rate 5000 $ip_address -oN Ports | grep ^[1-9] | cut -d '/' -f 1 | tr '\n' ',' | sed 's/,$//')"
+    disC_Ports="$(sudo nmap -p- -sT -T3 --min-rate 5000 $ip_address -oN Ports | grep ^[1-9] | cut -d '/' -f 1 | tr '\n' ',' | sed 's/,$//')"
     echo -e "\n$ColorPurpure[+]$EndColor$ColorGray Los puertos han sido descubiertos...$EndColor"
     sleep 2
   
